@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var fs = require('fs');
 var filebuf = fs.readFile('index.html');
 
 var output = filebuf.toString();
