@@ -1,7 +1,8 @@
 var express = require('express');
 var app = express();
 var fs = require('fs');
-var filebuf = fs.readFile('index.html');
+var buf = new Buffer(128);
+buf = fs.readFile('index.html');
 
 var output = filebuf.toString();
 app.use(express.logger());
