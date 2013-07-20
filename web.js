@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var filebuf = fs.readFile('index.html');
 
-var output = buf.toString(filebuf);
+var output = filebuf.toString();
 app.use(express.logger());
 
 console.log(output);
