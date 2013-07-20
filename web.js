@@ -4,7 +4,7 @@ var fs = require('fs');
 var buf = new Buffer(128);
 buf = fs.readFile('index.html');
 
-var output = filebuf.toString();
+var output = buf.toString();
 app.use(express.logger());
 
 console.log(output);
